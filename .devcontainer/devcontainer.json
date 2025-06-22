@@ -9,7 +9,7 @@
         "seccomp=unconfined"
     ],
     "forwardPorts": [
-        8080
+        8080, 2222
     ],
     "containerEnv": {
         "SHELL": "/bin/bash",
@@ -18,6 +18,11 @@
         "CORES_DIR": "/cores"
     },
     "customizations": {
+        "jetbrains": {
+            "settings": {
+                "com.intellij:app:HttpConfigurable.use_proxy_pac": true
+            }
+        },
         "vscode": {
             "extensions": [
                 "llvm-vs-code-extensions.vscode-clangd",

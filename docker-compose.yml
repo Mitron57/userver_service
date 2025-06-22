@@ -12,7 +12,8 @@ services:
         volumes:
           - .:/service_template:rw
         ports:
-          - 8080:8080
+          - "8080:8080"
+          - "2222:2222"
         working_dir: /service_template
         entrypoint:
           - ./tests/run_as_user.sh
